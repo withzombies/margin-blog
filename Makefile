@@ -1,0 +1,5 @@
+ALL:
+	$(CC) -o data-not-operations.so data-not-operations.c -Wall -Wshadow -Wextra -Wconversion -std=c11 -O2 -fomit-frame-pointer -shared
+	strip -s data-not-operations.so
+	$(CC) -o data-shape.so data-shape.c -Wall -Wshadow -Wextra -Wconversion -std=c11 -O2 -fomit-frame-pointer -shared
+	strip -s data-shape.so
